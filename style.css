@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(235, 229, 229);
+}
+
+.header-container {
+    background-image: url('assets/header-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.logo{
+    color: white;
+    padding-top: 20px;
+}
+.search-container {
+    align-self: center;
+}
+.search-container input,select,button {
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid black;
+}
+.search-container button:hover {
+    background-color: rgba(121, 175, 226, 0.979);
+    color: white;
+}
+ul {
+    list-style: none;
+    display: flex;
+    padding-top: 30px;
+}
+ul li {
+    margin: 0 10px;
+    transition: .5s ease-in-out;
+}
+ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ----------------------------------- */
+.book-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.book-item {
+    width: 400px;
+    height: 600px;
+    margin: 20px;
+    background-color: rgb(248, 248, 248);
+    box-shadow: 5px 5px 15px 5px rgb(92, 79, 79);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.book-item:hover {
+    background-image: linear-gradient(140deg, rgb(180, 179, 179), rgb(235, 231, 231));
+}
+.book-image {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.book-image img {
+    height: 100%;
+}
+.book-info {
+    height: 60%;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 20px;
+}
+.book-info span, p, .buttons-icon {
+    margin: 10px 0;
+}
+.book-info .book-title {
+    font-size: 20px;
+    font-weight: 800;
+}
+.book-info .book-price {
+    position: relative;
+    top: 0;
+    left: 210px;
+    padding: 10px;
+    background-color: rgb(155, 191, 192);
+    border-radius: 10px;
+}
+.book-info .buttons-icon {
+    display: flex;
+    justify-content: space-evenly;
+}
+.book-info .buttons-icon button {
+    width: 100px;
+    color: rgb(214, 212, 212);
+    border: none;
+}
+.buttons-icon .add {
+    background-color: seagreen;
+}
+.buttons-icon .add:hover {
+    background-color: rgb(39, 87, 60);
+}
+.buttons-icon .wishlist {
+    background-color: rgb(192, 57, 57);
+}
+.buttons-icon .wishlist:hover {
+    background-color: rgb(148, 42, 42);
+}
+.buttons-icon .buy {
+    background-color: rgb(230, 95, 45);
+}
+.buttons-icon .buy:hover {
+    background-color: rgb(180, 75, 37);
+}
+/* --------------------------------- */
+
+@media (max-width: 1110px){
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        font-size: 30px;
+    }
+    ul{
+        background-color: black;
+        padding-top: 0;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    ul li{
+        display: block;
+    }
+    ul li a {
+        padding: 10px;
+    }
+    ul li a:hover{
+        background-color: white;
+        border-radius: 10px;
+        color: black;
+    }
+}
+
+@media (max-width: 885px) {
+    .header-container{
+        margin-bottom: 20px;
+    }
+    .book-list {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media (max-width: 530px){
+    .logo{
+        font-size: 20px;
+    }
+    .search-container input, select, button{
+        font-size: 15px;
+        padding: 5px;
+    }
+    ul{
+        font-size: 15px;
+    }
+}
+@media (max-width: 1759px){
+    .book-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* ----------------------------- */
+footer{
+    width: 100%;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .social a{
+    font-size: 30px;
+    color: black;
+    margin: 0 20px;
+}
+footer .social a:hover{
+    color: white;
+}
+footer .copyright{
+    color: darkgray;
+}
+.arrow {
+    font-size: 60px;
+    position: fixed;
+    top: 865px;
+    right: 20px;
+    z-index: 1;
+}
+.arrow a{
+    color: black;
+    color: rgb(14, 92, 194);
+}

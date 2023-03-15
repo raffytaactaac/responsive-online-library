@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <form action="#">
+        <h2>Checkout Form</h2>
+        <div class="book-container">
+            <div class="book-image">
+                <img src="assets/image1.jpg">
+                <p>Total: ₱500</p>
+            </div>
+        </div>
+        <div class="first-name">
+            <label for="fname" class="fname">Firstname:</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter Name" required>
+        </div>
+        <div class="last-name">
+            <label for="lname" class="lname">Lastname:</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter Lastname" required>
+        </div>
+        <div class="address">
+            <label for="address" class="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="ex. Street, Barangay, Municipality etc.." required>
+        </div>
+        <div class="phone-number">
+            <label for="mobile-number" class="m-number">Mobile No:</label>
+            <input type="tel" name="mobile-number" id="mobile-number" placeholder="ex. 09**********" required>
+        </div>
+        <div class="payment">
+            <label class="payment-text">Payment Method:</label>
+            <div class="payment-list">
+                <div class="gcash">
+                    <input type="radio" name="payment-method" value="gcash" id="gcash">
+                    <label for="gcash">Gcash:</label>
+                </div>
+                <div class="maya">
+                    <input type="radio" name="payment-method" value="maya" id="maya">
+                    <label for="maya">Maya</label>
+                </div>
+                <div class="cod">
+                    <input type="radio" name="payment-method" value="cod" id="cod">
+                    <label for="cod">Cash on Delivery</label>
+                </div>
+                <div class="card">
+                    <input type="radio" name="payment-method" value="card" id="card">
+                    <label for="card">Debit Card / Crebit Card</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-submit">
+            <input type="submit" id="submit">
+        </div>
+        <div class="back">
+            <a href="index.html">Back To Homepage</a>
+        </div>
+
+    </form>
+</body>
+</html>

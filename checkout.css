@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('assets/bg2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+form{
+    width: 600px;
+    height: 1050px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(224, 221, 221);
+    backdrop-filter: blur(50px);
+    color: rgb(255, 255, 255);
+}
+h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+}
+.book-container{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.book-image p {
+    font-size: 25px;
+    height: 10%;
+    word-spacing: 20px;
+}
+.book-image{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.book-image img{
+    height: 90%;
+    border-radius: 10px;
+}
+label, input{
+    margin-top: 20px;
+    font-size: 15px;
+}
+input{
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgb(131, 125, 125);
+}
+.address{
+    margin-left: 0;
+}
+#address{
+    width: 70%;
+    margin-left: 10px;
+}
+.payment{
+    margin-top: 10px;
+}
+.payment .payment-list{
+    margin-left: 140px;
+}
+.btn-submit{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.btn-submit #submit{
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: rgb(66, 66, 255);
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    width: 30%;
+}
+.back{
+    text-align: center;
+    margin-top: 30px;
+}
+.back a{
+    color: white;
+}
+.back a:hover{
+    color: rgb(86, 86, 255);
+}
+#submit:hover{
+    background-color: rgb(54, 54, 175);
+    color: white;
+}
+/* -------------------------------------- */
+
+@media (max-width: 600px){
+    form{
+        height: 1300px;
+        width: 550px;
+    }
+    .first-name, 
+    .last-name,
+    .address,
+    .phone-number{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    input{
+        font-size: 13px;
+    }
+    .payment{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .payment .payment-text{
+        text-decoration: underline;
+    }
+
+}
